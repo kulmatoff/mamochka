@@ -1,0 +1,19 @@
+.my-butt {
+    min-width: 120px;
+    height: 40px;
+    color: white;
+    background-color: royalblue;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.primary {
+    background-color: royalblue;
+}
+
+.secondary {
+    background-color: gray;
+    opacity: 0.4;
+}
