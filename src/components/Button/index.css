@@ -9,11 +9,11 @@
     font-size: 18px;
 }
 
-.primary {
+.my-butt--primary {
     background-color: royalblue;
 }
 
-.secondary {
+.my-butt--secondary {
     background-color: gray;
     opacity: 0.4;
 }
