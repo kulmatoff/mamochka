@@ -3,8 +3,9 @@ import { Button } from "./components/Button"
 function App() {
   return (
     <div className="App">
-      <Button>Confirm</Button>
-      <Button variant="secondary">Cancel</Button>
+      <Button size="sm">Small</Button>
+      <Button size="md" variant="secondary">Medium</Button>
+      <Button size="lg" variant="primary">Large</Button>
     </div>
   );
 }

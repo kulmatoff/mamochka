@@ -1,19 +1,80 @@
 .my-butt {
-    min-width: 120px;
-    height: 40px;
     color: white;
     background-color: royalblue;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 18px;
+    text-shadow:
+        0 0 7px #fff,
 }
 
+.my-butt:hover {
+    animation: on-button-hover forwards 0.5s;
+    animation: to-glow forwards 0.5s;
+}
+
+@keyframes on-button-hover {
+    from {
+        border-radius: 8px;
+        /* rotate: 0deg; */
+    }
+    to {
+        border-radius: 16px;
+        /* rotate: 360deg; */
+    }
+}
+
+@keyframes to-glow {
+    from {
+        text-shadow:
+        0 0 7px #fff;
+    }
+    to {
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px royalblue,
+        0 0 82px royalblue,
+        0 0 92px royalblue,
+        0 0 102px royalblue,
+        0 0 151px royalblue;
+    }
+}
 .my-butt--primary {
     background-color: royalblue;
 }
 
+.my-butt--primary:hover {
+    background-color: rgb(72, 118, 255);
+}
+
 .my-butt--secondary {
-    background-color: gray;
-    opacity: 0.4;
+    color: royalblue;
+    border: solid 2px royalblue;
+    background-color: unset;
+    opacity: 0.8;
+}
+
+.my-butt--secondary:hover {
+    opacity: 1;
+}
+
+
+.my-butt--sm {
+    min-width: 80px;
+    height: 30px;
+    font-size: small;
+}
+
+.my-butt--md {
+    min-width: 120px;
+    height: 40px;
+    font-size: medium;
+}
+
+.my-butt--lg {
+    min-width: 160px;
+    height: 60px;
+    font-size: larger;
 }
