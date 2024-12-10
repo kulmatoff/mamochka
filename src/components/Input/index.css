@@ -1,0 +1,22 @@
+input {
+    min-width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    color: black;
+    font-size: 16px;
+}
+
+.input--danger {
+    border: 1px solid red;
+    color: red;
+}
+
+input:focus {
+    border: 1px solid royalblue;
+    color: royalblue;
+}
+
+input:focus label {
+    color: red;
+}
