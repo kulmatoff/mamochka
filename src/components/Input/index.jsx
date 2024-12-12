@@ -1,15 +1,34 @@
 import { useState } from "react";
-import "./index.css"
+import "./index.css";
 
 export function Input(props) {
-  const { danger, size = "md", label, placeholder, children } = props;
-  const className = `${danger ? "input--danger" : ""}`;
-  console.log(className);
+  const {
+    danger,
+    label,
+    placeholder,
+    type = "text",
+    value,
+    onChange,
+    children,
+  } = props;
+
+  const labelClassName = `input--label ${danger ? "label--danger" : ""}`;
+  const className = `input ${danger ? "input--danger" : ""}`;
+
   return (
-    <div className="input">
-      <label>{label}</label>
+    <div className="input--element">
+      <label for="inp" className={labelClassName}>
+        {label}
+      </label>
       <br />
-      <input className={className} placeholder={placeholder}>
+      <input
+        id="inp"
+        className={className}
+        placeholder={placeholder}
+        type={type}
+        value={value}
+        onChange={onChange}
+      >
         {children}
       </input>
     </div>

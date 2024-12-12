@@ -11,9 +11,10 @@ const types = {
 }
 
 export function Heading(props) {
-    const {level="1", children} = props;
+    const {level="1", additionalClassName="", children} = props;
 
     const tag = types[level];
+    const element = React.createElement(tag, {className: additionalClassName}, children);
 
-    return React.createElement(tag, {children})
+    return element;
 }

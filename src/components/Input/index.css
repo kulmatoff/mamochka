@@ -1,8 +1,8 @@
-input {
+.input {
     min-width: 300px;
     height: 40px;
     border-radius: 8px;
-    border: 1px solid gray;
+    border: 1px solid rgb(189, 189, 189);
     color: black;
     font-size: 16px;
 }
@@ -12,11 +12,15 @@ input {
     color: red;
 }
 
-input:focus {
+.label--danger {
+    color: red;
+}
+
+.input:focus {
     border: 1px solid royalblue;
     color: royalblue;
 }
 
-input:focus label {
-    color: red;
+.input--element:focus-within label {
+    color: royalblue;
 }
